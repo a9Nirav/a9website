@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A9 Business - ERP</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="img/A9mini.png" type="image/gif" sizes="16x16">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+
+        <img src="img/A9mini.png" alt="" height="60px" width="60px"
+            class="position-absolute top-50 start-50 translate-middle">
+
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="Careers.html">Career</a></li>
+                    <!-- <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li> -->
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0"
+                        href="https://www.facebook.com/profile.php?id=61551249441293&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0"
+                        href="https://youtube.com/@a9business?si=ReYBd2ZWWaVcONx3"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0"
+                        href="https://www.linkedin.com/company/a9business-in/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0"
+                        href="https://www.instagram.com/a9business.in?igsh=MWN2OWZwYWlzejVpZg=="><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+    <!-- Brand & Contact End -->
+
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/a9 logo bold.png" alt="" height="50px">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- <a href="https://woa9.in/" class="nav-item nav-link whatsapapi"><img src="img/whatsappLogo.png" alt=""
+                        height="30px" width="30px"> WhatsApp API</a> -->
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services
+                    </a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="googleMyBusiness.html" class="dropdown-item drop"> <i
+                            class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                            data-wow-delay="0.1s"></i> Google My Business</a>
+
+                        <a href="SocialMedia.html" class="dropdown-item drop"> <i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Social Media Management</a>
+                        <a href="Website.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Website Development</a>
+                        <a href="Website.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Application Development</a>
+                        <a href="seo.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Search Engine Optimization</a>
+
+
+                              
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product
+                    </a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="whatsappAPI.html" class="dropdown-item drop"> <i
+                            class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                            data-wow-delay="0.1s"></i>WhatsApp API</a>
+                        <a href="ERP.html" class="dropdown-item drop"> <i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>ERP</a>
+
+
+
+                        <a href="crm.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>WhatsApp CRM</a>
+                        <a href="BillingSoftware.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Billing Software</a>
+
+
+                    </div>
+                </div>
+
+
+                <a href="website-design-portfolio.html" class="nav-item nav-link">Portfolio</a>
+
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class=" btn btn-primary    partner-btn">
+                    <!-- <img src="img/indeximg/partner.png" alt="" height="50px" width="50px" class="me-2"> -->
+                    Channel Partner <i class="fa fa-arrow-right ms-3"></i></button>
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button> -->
+
+
+
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                <!-- 
+                <a href="contact.html" class="btn btn-primary py-4 px-lg-5  d-lg-block">Contact<i
+                        class="fa fa-arrow-right ms-3"></i></a> -->
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0  wow fadeIn deep" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+                    <img class="img-fluid" src="img/main_back1.jpg" alt="Image" height="100vh">
+                </button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img class="img-fluid" src="img/main_back2.jpg" alt="Image">
+                </button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+                    <img class="img-fluid" src="img/main_back3.jpg" alt="Image">
+                </button>
+            </div> -->
+            <div class="carousel-inner main-back-color2">
+
+                <!-- 2nd -->
+                <div class="container">
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 d-flex justify-content-center align-items-center ">
+
+                            <div class=" nirav3">
+                                <h4 class="color-white wow fadeInLeft" data-wow-delay="0.1s">We understand that
+                                    efficient management of resources is essential for the success of any enterprise
+                                </h4>
+                                <h6 class="color-white mb-3 wow fadeInLeft" data-wow-delay="0.5s">That's why we are
+                                    proud to offer comprehensive ERP</h6>
+                                <a href="#erp-form" class="contact-us1 wow fadeInLeft" data-wow-delay="0.3s">More
+                                    Info</a>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="nirav3 text-center carousel-inner-box1">
+                                <img src="img/indeximg/Time Management.png" alt="" class="img-fluid vadhiya wow fadeInRight"
+                                    data-wow-delay="0.1s">
+                                <div class="flot-tag1  animate__backInRight d-flex orange-border ">
+                                    <span class="inner-tag-box2"><i
+                                            class="fa-solid fa-building color-white icon-size"></i></span>
+                                    <div class="tag-text"> User-friendly Interface </div>
+                                </div>
+                                <div class="flot-tag2  animate__backInRight d-flex orange-border">
+                                    <span class="inner-tag-box2"><i
+                                            class="fa-solid fa-building color-white icon-size"></i></span>
+                                    <div class="tag-text"> Dedicated Support</div>
+                                </div>
+                                <div class="flot-tag3  animate__backInRight d-flex orange-border">
+                                    <span class="inner-tag-box2"><i
+                                            class="fa-solid fa-code color-white icon-size"></i></span>
+                                    <div class="tag-text"> Mobile Access</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- 3box start  -->
+    <div class="container box3-main-container">
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-6">
+                <div class="d-flex box3-inner-container wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="">
+                        <img src="img/indeximg/round-one.png" alt="" height="50px" width="50px" class="logo-color3">
+                    </div>
+                    <div class="ps-3">
+                        <h5>Comprehensive Modules</h5>
+                        <!-- <div class="">Convenient Navigation</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+                <div class="d-flex box3-inner-container wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="">
+                        <img src="img/circle-2.png" alt="" height="50px" width="50px" class="logo-color3">
+                    </div>
+                    <div class="ps-3">
+                        <h5>Customization</h5>
+                        <div class="">Scalability</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 mt-lg-2 mt-xl-0">
+                <div class="d-flex box3-inner-container wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="">
+                        <img src="img/indeximg/round-three.png" alt="" height="50px" width="50px" class="logo-color3">
+                    </div>
+                    <div class="ps-3">
+                        <h5>Integration Capabilities</h5>
+                        <div class="">Real-time Insights:</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3box end  -->
+
+
+    <!-- why website important start  -->
+    <div class="container-xxl margin-top3">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="d-flex justify-content-center align-items-center  align-content-center">
+                    <img src="img/indeximg/erp.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-delay="0.1s">
+                <h3 class="color3 font-800">At A9 Business, we understand that efficient management of resources is
+                    essential for the success of any enterprise.
+                </h3>
+                <h6 class="mt-3">That's why we are proud to offer comprehensive ERP (Enterprise Resource Planning)
+                    solutions designed to streamline operations, enhance productivity, and drive growth. With years of
+                    experience and a deep understanding of business processes across various industries, we have earned
+                    a reputation for delivering robust and scalable ERP solutions that cater to the unique needs of our
+                    clients. </h6>
+                <div class="mt-3">Our ERP offerings encompass a wide range of modules, including finance, human
+                    resources, supply chain management, customer relationship management, and more. Whether you're a
+                    small business or a large corporation, our flexible and customizable ERP solutions can be tailored
+                    to fit your specific requirements and seamlessly integrate with your existing systems.
+
+                </div>
+                <!-- <div class="mt-3">Our mission goes beyond conventional marketing. We are dedicated to empowering your
+                    brand's journey, acting as the driving force that propels you towards unparalleled success. We
+                    understand that the digital landscape is not just a platform; it's a dynamic ecosystem where
+                    creativity, strategy, and innovation converge.</div> -->
+
+                <div class="why-website-box mt-3">What sets us apart is our commitment to providing end-to-end support
+                    throughout the ERP implementation process. From initial consultation and system design to
+                    deployment, training, and ongoing maintenance, our team of experts is dedicated to ensuring a smooth
+                    and successful transition. </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- why website important end  -->
+
+
+
+    <!-- Why Choose A9 Business start -->
+
+    <div class="container-xxl margin-top3">
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-delay="0.1s">
+                <h1 class="color3 font-800">We believe in the power of technology to drive business transformation,
+                </h1>
+                <div class="mt-3"><img src="img/circle-1.png" alt="" height="20px" width="20px">
+                    And our ERP solutions are designed to do just that. By centralizing data, automating workflows, and
+                    providing real-time insights, our ERP systems empower organizations to make informed decisions,
+                    optimize processes, and stay ahead of the competition.
+                </div>
+                <div class="mt-3"><img src="img/circle-2.png" alt="" height="20px" width="20px">
+                    At A9 Business, we prioritize customer satisfaction above all else. We strive to build long-term
+                    partnerships with our clients based on trust, transparency, and mutual success. Our goal is not just
+                    to deliver a product but to provide a comprehensive solution that adds tangible value to your
+                    business.
+                </div>
+                <div class="mt-3"><img src="img/circle-3.png" alt="" height="20px" width="20px">
+                    Whether you're looking to streamline your operations, improve efficiency, or scale your business, A9
+                    Business is here to help. Let us be your trusted partner in harnessing the full potential of ERP
+                    technology and taking your organization to new heights of success.
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="d-flex justify-content-center align-items-center  align-content-center">
+                    <img src="img/indeximg/erp2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Why Choose A9 Business end -->
+
+
+    <!-- website services start  -->
+
+    <div class="container-fluid margin-top3">
+        <div class="top-line"></div>
+        <h1 class="text-center mb-3">ERP Service</h1>
+        <div class="row g-3">
+            <div class="col-xl-3 col-lg-4">
+                <div class="website-services-inner-box wow animate__fadeInLeft" data-wow-delay="0.1s">
+                    <div class="vad">
+                        <img src="img/indeximg/cloud-server.png" alt="" class="web-serv-img-box mb-2">
+                    </div>
+                    <h5>Comprehensive Modules </h5>
+                    <div class="">Our ERP solutions offer a comprehensive suite of modules to cover various aspects of
+                        business operations, including finance, human resources, supply chain management, manufacturing,
+                        sales, and customer relationship management.</div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4">
+                <div class="website-services-inner-box wow animate__fadeInDown" data-wow-delay="0.1s">
+                    <img src="img/indeximg/maintenance.png" alt="" class="web-serv-img-box mb-2">
+                    <h5>Customization</h5>
+                    <div class="">We understand that every business is unique. That's why our ERP systems are highly
+                        customizable, allowing you to tailor the solution to your specific requirements, workflows, and
+                        industry regulations.</div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <div class="website-services-inner-box wow animate__fadeInUp" data-wow-delay="0.1s">
+                    <img src="img/indeximg/world-wide-web.png" alt="" class="web-serv-img-box mb-2">
+                    <h5>Scalability</h5>
+                    <div class="">Whether you're a small startup or a large enterprise, our ERP solutions are designed
+                        to grow with your business. With scalable architecture and flexible deployment options, you can
+                        easily expand the system to accommodate your evolving needs.</div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4">
+                <div class="website-services-inner-box wow animate__fadeInDown" data-wow-delay="0.1s">
+                    <img src="img/indeximg/new-product.png" alt="" class="web-serv-img-box mb-2">
+                    <h5>Integration Capabilities</h5>
+                    <div class="">Our ERP systems seamlessly integrate with existing software applications, databases,
+                        and third-party tools, enabling smooth data flow and collaboration across different departments
+                        and systems. </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <div class="website-services-inner-box wow animate__fadeInRight" data-wow-delay="0.1s">
+                    <img src="img/indeximg/customer-service.png" alt="" class="web-serv-img-box mb-2">
+                    <h5>Real-time Insights</h5>
+                    <div class="">Gain actionable insights into your business performance with real-time reporting and
+                        analytics. Monitor key metrics, track KPIs, and make informed decisions to drive efficiency and
+                        profitability.
+                    </div>
+                </div>
+            </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="website-services-inner-box wow animate__fadeInUp" data-wow-delay="0.1s">
+                        <img src="img/indeximg/chat-box.png" alt="" class="web-serv-img-box mb-2">
+                        <h5>Workflow Automation</h5>
+                        <div class=""> Streamline your business processes and eliminate manual tasks with workflow
+                            automation. From purchase orders to invoice processing, our ERP solutions automate routine
+                            tasks, saving time and reducing errors.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="website-services-inner-box wow animate__fadeInRight" data-wow-delay="0.1s">
+                        <img src="img/indeximg/invoice.png" alt="" class="web-serv-img-box mb-2">
+                        <h5>Mobile Access</h5>
+                        <div class=""> Stay connected to your business anytime, anywhere with mobile access to your ERP
+                            system. Our mobile-friendly interfaces enable remote access to critical data and
+                            functionalities, empowering your team to stay productive on the go.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4">
+                    <div class="website-services-inner-box wow animate__fadeInLeft" data-wow-delay="0.1s">
+                        <img src="img/indeximg/startup.png" alt="" class="web-serv-img-box mb-2">
+                        <h5>User-friendly Interface</h5>
+                        <div class="">Our ERP systems feature intuitive user interfaces designed for ease of use and
+                            accessibility. With minimal training required, your team can quickly adapt to the new system
+                            and start reaping the benefits.</div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4">
+                    <div class="website-services-inner-box wow animate__fadeInRightBig" data-wow-delay="0.3s">
+                        <img src="img/indeximg/cloud-storage1.png" alt="" class="web-serv-img-box mb-2">
+                        <h5>Dedicated Support</h5>
+                        <div class="">At A9 Business, we are committed to providing exceptional customer support. From
+                            initial implementation to ongoing maintenance and upgrades, our dedicated team of experts is
+                            here to help you every step of the way.</div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+        <!-- website services end  -->
+
+
+        <!-- what to discuss start  -->
+        <div class="container-fluid contact-us-main-container margin-top3" id="erp-form">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-6 text-center wow fadeInRight" data-wow-delay="0.1s">
+                        <img src="img/indeximg/contactus-img1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-right-box wow fadeInLeft" data-wow-delay="0.1s">
+                            <h1 class="text-center color3 font-800">Book ERP Demo</h1>
+                            <form method="POST" action="" name="google-sheet">
+
+
+                                <input type="text" placeholder="Enter Your Name" name="Name" class="contact-inp ">
+                                <input type="email" placeholder="Enter Your Email" name="Email" class="contact-inp mt-3">
+                                <input type="text" placeholder="Enter Your Phone" name="Phone" class="contact-inp mt-3">
+                                <input type="date" placeholder="Enter Your Services" name="date" class="contact-inp mt-3">
+                                <input type="time" placeholder="Enter Your Services" name="time" class="contact-inp mt-3">
+
+                                <button type="submit" class="contact-submit-btn">Send</button>
+
+                            </form>
+                            <div class="mt-3"> We'll get back to you as soon as possible. In the meantime, feel free to
+                                explore
+                                more about our services on our website. We look forward to connecting with you soon!"
+                            </div>
+
+                            <div class="d-flex justify-content-around">
+                                <a href="" class="phone-btn1"><img src="img/indeximg/viber.png" alt="" height="20px"
+                                        width="20px" class="me-2"> 9004928129</a>
+                                <a href="" class="what-btn"> <img src="img/indeximg/whatsapp3.png" alt="" height="20px"
+                                        width="20px" class="me-2"> 9004928129</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- what to discuss end  -->
+
+
+      <!-- Testimonial Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/1.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">" Working with A9 BUSINESS Consultancy services Pvt Ltd has been an absolute
+                        game-changer for our business. Their expertise in online marketing strategies has significantly
+                        boosted our brand visibility and brought in a steady stream of qualified leads. Highly
+                        recommended! "</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/18.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">" Amit Tripathi, CEO of A9 BUSINESS Consultancy services Pvt Ltd was very helpful as
+                        we were struggling to make an impact in the digital space until we partnered with A9 BUSINESS
+                        Consultancy services Pvt Ltd. Their tailored approach to our marketing needs and their
+                        commitment to results have surpassed our expectations. Our online presence has never been
+                        stronger! "</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/22.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">" Amisha Gupta as a Relationship Manager has been of great guidance handling our
+                        company social media profile. A9 BUSINESS Consultancy services Pvt Ltd has been instrumental in
+                        elevating our digital presence. Their team is proactive, creative, and always goes the extra
+                        mile to ensure our campaigns are successful. We're thrilled with the results! "</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/9.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">" The A9 team understands our industry inside and out. Their strategic insights
+                        combined with their innovative marketing tactics have propelled our business to new heights.
+                        They're not just a company they're a trusted partner in our growth journey!" </p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/5.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">" Choosing A9 business was one of the best decisions we made. Their comprehensive
+                        approach to Website has helped us reach our target audience effectively and achieve remarkable
+                        ROI. They are true experts in their field! "</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/11.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">"We were struggling to find an all-in-one solution for our e-commerce business until
+                        we found A9 BUSINESS Consultancy services Pvt Ltd. Their comprehensive approach to marketing,
+                        website development, and billing software integration has streamlined our operations and boosted
+                        our online sales. We couldn't be happier with the results!"</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/7.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">"We've been working withA9 BUSINESS Consultancy services Pvt Ltd for over a year now,
+                        and their impact on our business has been phenomenal. Their team's attention to detail and
+                        commitment to our success have exceeded our expectations. Our website is sleek, our billing
+                        process is seamless, and our sales are thriving!"</p>
+                </div>
+             
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="testimonial-logo">
+                        <img src="img/indeximg/testimonial-logo/21.png" alt="" class="img-fluid" >
+                    </div>
+
+                    <p class="mb-0">"Securing the WhatsApp green tick for our business was a game-changer, and we
+                        couldn't have done it without the expertise of A9 BUSINESS Consultancy services Pvt Ltd & the
+                        relationship manager Vidya Bavadane Their seamless process and dedication to ensuring our
+                        account's authenticity not only gave us credibility but also boosted customer trust. Highly
+                        recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">About Us</h5>
+                        <p class="mb-2">
+                            "A9 business provide the best IT related service for you to start with highly qualified
+                            professionals and team members.We design website according to the general consumer needs and
+                            wants."</p>
+                        <p class="mb-2 text-light"><i class="fa fa-phone-alt me-3"></i>+91- 9137775177</p>
+                        <p class="mb-2 text-light"><i class="fa fa-phone-alt me-3"></i>+91- 7021300820</p>
+                        <p class="mb-2 text-light"><i class="fa fa-envelope me-3"></i>Info@a9business.in</p>
+                        <p class="mb-2 text-light"><i class="fa fa-envelope me-3"></i>a9business.info@gmail.com</p>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Quick Links</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="seo.html">SEO</a>
+                        <a class="btn btn-link" href="crm.html">CRM</a>
+                        <a class="btn btn-link" href="BillingSoftware.html">Billing Software</a>
+                        <a class="btn btn-link" href="Website.html">Website Development</a>
+                        <a class="btn btn-link" href="SocialMedia.html">Social Media</a>
+                        <a class="btn btn-link" href="Careers.html">Career</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-light mb-4">Address </h5>
+                        <h6 class="mb-2 text-light"><i class="fa fa-map-marker-alt me-3"></i>Thane</h6>
+                        <h6 class="mb-2 text-light"><i class="fa fa-map-marker-alt me-3"></i>Mumbai</h6>
+                        <h6 class="mb-2 text-light"><i class="fa fa-map-marker-alt me-3"></i>Bangalore</h6>
+
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                                href="https://www.instagram.com/a9business.in?igsh=MWN2OWZwYWlzejVpZg=="
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                                href="https://www.facebook.com/profile.php?id=61551249441293&mibextid=ZbWKwL"
+                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                                href="https://youtube.com/@a9business?si=ReYBd2ZWWaVcONx3" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle me-0"
+                                href="https://www.linkedin.com/company/a9business-in/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 overflow-hidden">
+                        <h5 class="text-light mb-4">Map</h5>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.161717008403!2d72.83714264631273!3d19.28060797759719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9f5c8a2c56f%3A0xd379ffc578254308!2sA9%20BUSINESS%20Consultantancy%20services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1703932427803!5m2!1sen!2sin"
+                            width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a href="#"></a>A9 Business, All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+
+                            Designed By <a href="https://www.a9business.in/">A9 Business</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
+
+
+
+
+        <div class="whatsapp_float shake">
+            <a href="https://wa.me/919987142367" target="_blank" class="element"><img src="img/whatsappLogo.png"
+                    class="whatsapp_float_btn">
+            </a>
+        </div>
+
+        
+   <div class="facebook_float shake">
+        <a href="https://www.facebook.com/people/a9businessin/61551249441293/?mibextid=ZbWKwL" target="_blank" class="element"><img src="img/indeximg/facebook.png"
+                class="facebook_float_btn">
+        </a>
+    </div>
+
+    <div class="instagram_float shake">
+        <a href="https://www.instagram.com/a9business.in?igsh=MWN2OWZwYWlzejVpZg%3D%3D" target="_blank" class="element"><img src="img/indeximg/instagram1.png"
+                class="facebook_float_btn">
+        </a>
+    </div>
+
+    <div class="youtube_float shake">
+        <a href="https://www.youtube.com/@a9business" target="_blank" class="element"><img src="img/indeximg/video.png"
+                class="facebook_float_btn">
+        </a>
+    </div>
+
+
+            <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: #ffffff;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Become Channel Partner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form method="POST"
+                        action="https://script.google.com/macros/s/AKfycbxahDzFBcYxhzbaCjH3dTo4mSLif3vOucfkAeXjR_Kf2alguucH7XvkWhaRNLbBdMCW/exec"
+                        name="google-sheet1">
+
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/user.png" class="grayicon mb-2" alt="name icon"></span>
+                        <input type="text" placeholder="Enter Your Name" name="Name" class="contact-inp2 ">
+                        
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/email.png" class="grayicon mt-3" alt="name icon"></span>
+                        <input type="email" placeholder="Enter Your Email" name="Email" class="contact-inp2 mt-3">
+                        
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/viber.png" class="grayicon mt-3" alt="name icon"></span>
+                        <input type="text" placeholder="Enter Your Phone" name="Phone" class="contact-inp2 mt-3">
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/company.png" class="grayicon mt-3" alt="name icon"></span>
+                        <input type="text" placeholder="Enter Your company Name" name="Services"
+                            class="contact-inp2 mt-3">
+
+                        <button type="submit" class="contact-submit-btn">Send</button>
+
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+        <!-- swiper -->
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

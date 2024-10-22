@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A9 WhatsApp API</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="img/Woa9logo_mini.png" type="image/gif" sizes="16x16">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status">
+        </div>
+
+        <img src="img/A9mini.png" alt="" height="60px" width="60px"
+            class="position-absolute top-50 start-50 translate-middle">
+
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="Careers.html">Career</a></li>
+                    <!-- <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li> -->
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0"
+                        href="https://www.facebook.com/profile.php?id=61551249441293&mibextid=ZbWKwL"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0"
+                        href="https://youtube.com/@a9business?si=ReYBd2ZWWaVcONx3"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0"
+                        href="https://www.linkedin.com/company/a9business-in/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0"
+                        href="https://www.instagram.com/a9business.in?igsh=MWN2OWZwYWlzejVpZg=="><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+    <!-- Brand & Contact End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/Woa9logo.png" alt="" height="50px">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active color-green">Home</a>
+                <a href="about.html" class="nav-item nav-link color-green">About</a>
+                <!-- <a href="https://woa9.in/" class="nav-item nav-link whatsapapi"><img src="img/whatsappLogo.png" alt=""
+                        height="30px" width="30px"> WhatsApp API</a> -->
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle color-green" data-bs-toggle="dropdown">Services
+                    </a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="googleMyBusiness.html" class="dropdown-item drop"> <i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft" data-wow-delay="0.1s"></i>
+                            Google My Business</a>
+
+                        <a href="SocialMedia.html" class="dropdown-item drop"> <i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Social Media Management</a>
+                        <a href="Website.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Website Development</a>
+                        <a href="Website.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Application Development</a>
+                        <a href="seo.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Search Engine Optimization</a>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle color-green" data-bs-toggle="dropdown">Product
+                    </a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="whatsappAPI.html" class="dropdown-item drop"> <i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>WhatsApp API</a>
+                        <a href="ERP.html" class="dropdown-item drop"> <i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>ERP</a>
+
+
+
+                        <a href="crm.html" class="dropdown-item drop "><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>WhatsApp CRM</a>
+                        <a href="BillingSoftware.html" class="dropdown-item drop"><i
+                                class="fa-regular fa-circle-dot hover-icon wow fadeInLeft"
+                                data-wow-delay="0.1s"></i>Billing Software</a>
+
+
+                    </div>
+                </div>
+
+
+                <a href="website-design-portfolio.html" class="nav-item nav-link color-green">Portfolio</a>
+
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class=" btn btn-primary background-green   partner-btn">
+                    <!-- <img src="img/indeximg/partner.png" alt="" height="50px" width="50px" class="me-2"> -->
+                    Channel Partner <i class="fa fa-arrow-right ms-3"></i></button>
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button> -->
+
+
+
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                <!-- 
+                <a href="contact.html" class="btn btn-primary py-4 px-lg-5  d-lg-block">Contact<i
+                        class="fa fa-arrow-right ms-3"></i></a> -->
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <div class="container margin-top3">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Your Complete <span class="color-green">WhatsApp Engagement </span> Platform</h1>
+                <br>
+                <h5>Businesses drive 25-60% Revenues using AiSensy</h5>
+                <br>
+                <ul class="whatApi_ul">
+                    <li>Broadcast Promotional Offers to Unlimited Users</li>
+                    <li>Sell your Products on WhatsApp using Catalogs</li>
+                    <li>Automate Messages via Integrations</li>
+                    <li>Enable Multi-Agent Live Chat for Customer Support</li>
+                    <li>Build Chatbots & Solve for 24 x 7 Support & Engagement</li>
+                </ul>
+                <br>
+                <div class="">Powered by <h4 class="color-green"> Official WhatsApp Business API </h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="img/whatApiside_img-removebg-preview.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 3box end  -->
+
+    <!-- **********************start  -->
+    <div class="container-fluid what-big-background">
+        <!-- Why Choose A9 Business start -->
+
+        <div class="container ">
+
+
+            <div class="row g-3">
+                <div class="what-contact d-flex">
+                    <div class="ps-3">
+                        <img src="img/Nirav_Vadhiya_img.jpeg" alt="" height="50px" width="50px" class="rounded-circle">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="color-white ms-3">A9 Business consultancy services pvt. Ltd.
+                            <img src="img/green-check.png" height="17px" width="17px" alt="">
+                        </div>
+                        <div class="color-white ms-3">online</div>
+                    </div>
+                    <div class=""><img src="img/video-camera.png" alt="" height="20px" width="20px"
+                            class="white-icon ms-3"></div>
+                    <div class=""><img src="img/telephone.png" alt="" height="20px" width="20px"
+                            class="white-icon ms-3"></div>
+                    <div class=""><img src="img/options.png" alt="" height="20px" width="20px" class="white-icon ms-3">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+
+                    <div class="whatApi-inner-box wow animate__fadeInBottomLeft " data-wow-delay="0.1s">
+                        <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" class=""
+                            version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                            <title>tail-in</title>
+                            <!-- Change the fill color here -->
+                            <path opacity="0.13" fill="#ffffff"
+                                d="M1.533,3.568L8,12.193V1H2.812C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                            <!-- Change the fill color here -->
+                            <path fill="#ffffff" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z">
+                            </path>
+                        </svg>
+                        <h4 class="ps-3">Increase Visibility</h4>
+                        <div class="ps-3">Drive traffic to your WhatsApp Business Profile. hfjad fkjad fhjsadfkj </div>
+                        <div class="text-end what-Time"> 12:20 AM</div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="whatApi-inner-box wow animate__fadeInBottomLeft " data-wow-delay="0.4s">
+                        <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" class=""
+                            version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                            <title>tail-in</title>
+                            <!-- Change the fill color here -->
+                            <path opacity="0.13" fill="#ffffff"
+                                d="M1.533,3.568L8,12.193V1H2.812C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                            <!-- Change the fill color here -->
+                            <path fill="#ffffff" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z">
+                            </path>
+                        </svg>
+                        <h4 class="ps-3">Boost Conversions </h4>
+                        <div class="ps-3">Make it easy for users to message your business and convert it to sales.</div>
+                        <div class="text-end what-Time"> 10:30 PM</div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="whatApi-inner-box wow animate__fadeInBottomLeft " data-wow-delay="0.8s">
+                        <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" class=""
+                            version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                            <title>tail-in</title>
+                            <!-- Change the fill color here -->
+                            <path opacity="0.13" fill="#ffffff"
+                                d="M1.533,3.568L8,12.193V1H2.812C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                            <!-- Change the fill color here -->
+                            <path fill="#ffffff" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z">
+                            </path>
+                        </svg>
+                        <h5 class="ps-3">Optimize Customer Experience </h5>
+                        <div class="ps-3">Make it seamless for customers to engage with your business.</div>
+                        <div class="text-end what-Time"> 6:20 AM</div>
+                    </div>
+                </div>
+
+                <div class="whatAPIChat-footer d-flex">
+                    <div class="">
+                        <img src="img/add.png" alt="" height="30px" width="30px" class="gray-icon mt-1">
+                    </div>
+                    <div class="what-input">
+                        <img src="img/smile.png" alt="" height="20px" width="20px" class="gray-icon ">
+                        <span style="font-size: 14px;" class="ps-2">Type a messages</span>
+                    </div>
+                    <img src="img/voice.png" alt="" height="20px" width="20px" class="gray-icon mt-1 ms-2">
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ********************** end  -->
+    <div class="container-fluid mt-5 what-services-main-box">
+        <div class="container">
+            <div class="green-line"></div>
+            <h1 class="text-center color-green">Features</h1>
+            <div class="row">
+                <div class="col-lg-3 our-services2-leftbox ">
+                    <h2 class="text-center color-green text-shadow"> Broadcast </h2>
+                    <a href="SocialMedia.html">
+
+                        <div class="border  nirav1 Box-wahtAPI wow animate__fadeInBottomLeft" data-wow-delay="0.1s">
+
+
+                            <!-- <img src="img/indeximg/social-media.png" alt="" height="40px" width="40px" class="logo-color3 "> -->
+                            <!-- <h5 class="mt-2 color3">Social Media Marketing</h5> -->
+                            <div class=""> <img src="img/checkmark.png" alt="" height="25px" width="25px"> Push out your
+                                campaigns and engage with high response <b class="color-green"> WhatsApp messages</b>.
+                            </div>
+                        </div>
+                    </a>
+                    <a href="BillingSoftware.html">
+                        <div class="border   Box-wahtAPI mt-3 mb-3 wow animate__fadeInBottomLeft" data-wow-delay="0.4s">
+                            <!-- <img src="img/indeximg/invoice.png" alt="" height="40px" width="40px" class=" logo-color3"> -->
+                            <!-- <h5 class="mt-2 color3">Billing Software</h5> -->
+                            <div class=""> <img src="img/checkmark.png" alt="" height="25px" width="25px">Tag contacts,
+                                categorize and target them in groups using personalized
+                                <b class="color-green"> communications </b>.
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="Website.html">
+                        <div class="border  nirav1 Box-wahtAPI wow animate__fadeInBottomLeft" data-wow-delay="0.8s">
+                            <!-- <img src="img/indeximg/circle.png" alt="" height="40px" width="40px" class="logo-color3 "> -->
+                            <!-- <h5 class="mt-2 color3">Website</h5> -->
+                            <div class=""> <img src="img/checkmark.png" alt="" height="25px" width="25px">Build and
+                                nurture the relationships that generate future sales by engaging
+                                with your audiences regularly <b class="color-green"> on WhatsApp</b>.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center align-content-center wow animate__bounceInUp"
+                    data-wow-delay="0.1s">
+                    <div class="">
+                        <img src="img/whatsapp11-removebg-preview.png" alt="" class="img-fluid whatapi-img-shadow">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h2 class="text-center color-green">Chatbots</h2>
+                    <a href="crm.html">
+                        <div class="border   Box-wahtAPI wow animate__fadeInBottomRight" data-wow-delay="0.1s">
+                            <!-- <img src="img/indeximg/crm3.png" alt="" height="40px" width="40px" class="logo-color3 "> -->
+                            <!-- <h5 class="mt-2 color3">CRM</h5> -->
+                            <div class=""> <img src="img/checkmark.png" alt="" height="25px" width="25px">Create no-code
+                                chatbots to provide instant responses to common requests.</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="border  nirav1 Box-wahtAPI mt-3 mb-3 wow animate__fadeInBottomRight"
+                            data-wow-delay="0.4s">
+                            <!-- <img src="img/indeximg/seo1.png" alt="" height="40px" width="40px" class="logo-color3 "> -->
+                            <!-- <h5 class="mt-2 color3">SEO</h5> -->
+                            <div class=""> <img src="img/checkmark.png" alt="" height="25px" width="25px">Simplify mass
+                                communication and personalized responses with <b class="color-green"> automated tools
+                                </b>.</div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="border   Box-wahtAPI wow animate__fadeInBottomRight" data-wow-delay="0.8s">
+                            <!-- <img src="img/indeximg/whatsap.png" alt="" height="40px" width="40px" class=" "> -->
+                            <!-- <h5 class="mt-2 color3">Whatsapp API</h5> -->
+                            <div class=""> <img src="img/checkmark.png" alt="" height="25px" width="25px">Boost sales by
+                                directly converting more customer communications on <b class="color-green"> WhatsApp
+                                </b>.
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd part start -->
+        <div class="container margin-top3">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="whatAPI-left-box" style="background-color: #ffffff;">
+                        <h1 class="color-green ">Expanded Exposure</h1>
+                    
+                        <h4><strong>Increase the visibility of your WhatsApp profile</strong></h4>
+                     
+                        <ul class="">
+                            <li class="mb-3"> <img src="img/checkmark.png" alt="" height="20px" width="20px"> Run click to WhatsApp ads to drive traffic directly to your WhatsApp business profile.
+                            </li>
+                          
+                            <li> <img src="img/checkmark.png" alt="" height="20px" width="20px"> Display click to WhatsApp ads on Facebook & Instagram to reach wider audiences.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/whatAPI-img1.png" alt="" class="img-fluid whatapi-img-shadow1">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3rd -->
+
+        <div class="container margin-top3">
+            <div class="row">
+               
+                <div class="col-md-6">
+                    <img src="img/whatAPI-left-img2.png" alt="" class="img-fluid whatapi-img-shadow2">
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="whatAPI-left-box" style="background-color: #ffffff;">
+                        <h1 class="color-green ">Seamless Experience</h1>
+                    
+                        <h4><strong>Optimize the customer experience</strong></h4>
+                     
+                        <ul class="">
+                            <li class="mb-3"> <img src="img/checkmark.png" alt="" height="20px" width="20px"> Respond promptly when users message your business from click to WhatsApp ads.
+                            </li>
+                          
+                            <li> <img src="img/checkmark.png" alt="" height="20px" width="20px"> Offer special promotions in your click to WhatsApp ads to entice users to engage with your business.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4th -->
+        <div class="container margin-top3">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="whatAPI-left-box" style="background-color: #ffffff;">
+                        <h1 class="color-green ">Boost Conversions</h1>
+                    
+                        <h4><strong>Attract and retain customers</strong></h4>
+                     
+                        <ul class="">
+                            <li class="mb-3"> <img src="img/checkmark.png" alt="" height="20px" width="20px">Retarget to users who have clicked your click to WhatsApp ads but have not yet messaged you.
+                            </li>
+                          
+                            <li> <img src="img/checkmark.png" alt="" height="20px" width="20px"> Guide messaging customers towards purchasing your products.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/whatApi-left-img3.png" alt="" class="img-fluid whatapi-img-shadow3">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container-fluid what-big-background">
+        <!-- Why Choose A9 Business start -->
+
+        <div class="container ">
+
+
+            <div class=" g-3">
+                <div class="what-contact d-flex">
+                    <div class="ps-3">
+                        <img src="img/Nirav_Vadhiya_img.jpeg" alt="" height="50px" width="50px" class="rounded-circle">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="color-white ms-3">A9 Business consultancy services pvt. Ltd.
+                            <img src="img/green-check.png" height="17px" width="17px" alt="">
+                        </div>
+                        <div class="color-white ms-3">online</div>
+                    </div>
+                    <div class=""><img src="img/video-camera.png" alt="" height="20px" width="20px"
+                            class="white-icon ms-3"></div>
+                    <div class=""><img src="img/telephone.png" alt="" height="20px" width="20px"
+                            class="white-icon ms-3"></div>
+                    <div class=""><img src="img/options.png" alt="" height="20px" width="20px" class="white-icon ms-3">
+                    </div>
+                </div>
+
+                <!-- like middle date  -->
+
+                <div class="what-date">Frequently Asked Questions</div>
+
+
+                <div class="mt-3 d-flex justify-content-start">
+
+                    <div class="whatApi-inner-box what-chat-msg-box wow animate__fadeInBottomLeft "
+                        data-wow-delay="0.1s">
+                        <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" class=""
+                            version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                            <title>tail-in</title>
+                            <!-- Change the fill color here -->
+                            <path opacity="0.13" fill="#ffffff"
+                                d="M1.533,3.568L8,12.193V1H2.812C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                            <!-- Change the fill color here -->
+                            <path fill="#ffffff" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z">
+                            </path>
+                        </svg>
+                        <!-- <h4 class="ps-3">Increase Visibility</h4> -->
+                        <div class="ps-3">Drive traffic to your WhatsApp Business Profile. hfjad fkjad fhjsadfkj </div>
+                        <div class="text-end what-Time"> 12:20 AM</div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3 ">
+                    <div class="what-chat-msg-box">
+
+                        <div class="whatApi-inner-box-right wow animate__fadeInBottomLeft " data-wow-delay="0.1s">
+                            <div class="d-flex justify-content-end">
+                                <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                                    class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                                    <title>tail-out</title>
+                                    <!-- Change the fill color here -->
+                                    <path opacity="0.13" fill="#d9fdd3"
+                                        d="M5.188,1H0v11.193l6.467-8.625C7.526,2.156,6.958,1,5.188,1z">
+                                    </path>
+                                    <!-- Change the fill color here -->
+                                    <path fill="#d9fdd3" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <!-- <h4 class="ps-3">Increase Visibility</h4> -->
+                            <div class="ps-3">Drive traffic to your WhatsApp Business Profile. hfjad fkjad fhjsadfkj
+                            </div>
+                            <div class="text-end what-Time"> 12:20 AM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd -->
+
+                <div class="mt-3 d-flex justify-content-start">
+
+                    <div class="whatApi-inner-box what-chat-msg-box wow animate__fadeInBottomLeft "
+                        data-wow-delay="0.1s">
+                        <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" class=""
+                            version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                            <title>tail-in</title>
+                            <!-- Change the fill color here -->
+                            <path opacity="0.13" fill="#ffffff"
+                                d="M1.533,3.568L8,12.193V1H2.812C1.042,1,0.474,2.156,1.533,3.568z"></path>
+                            <!-- Change the fill color here -->
+                            <path fill="#ffffff" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z">
+                            </path>
+                        </svg>
+                        <!-- <h4 class="ps-3">Increase Visibility</h4> -->
+                        <div class="ps-3">Drive traffic to your WhatsApp Business Profile. hfjad fkjad fhjsadfkj </div>
+                        <div class="text-end what-Time"> 12:20 AM</div>
+                    </div>
+                </div>
+
+                <!-- 4th -->
+
+                <div class="d-flex justify-content-end mt-3 ">
+                    <div class="what-chat-msg-box">
+
+                        <div class="whatApi-inner-box-right wow animate__fadeInBottomLeft " data-wow-delay="0.1s">
+                            <div class="d-flex justify-content-end">
+                                <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet"
+                                    class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 8 13">
+                                    <title>tail-out</title>
+                                    <!-- Change the fill color here -->
+                                    <path opacity="0.13" fill="#d9fdd3"
+                                        d="M5.188,1H0v11.193l6.467-8.625C7.526,2.156,6.958,1,5.188,1z">
+                                    </path>
+                                    <!-- Change the fill color here -->
+                                    <path fill="#d9fdd3" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <!-- <h4 class="ps-3">Increase Visibility</h4> -->
+                            <div class="ps-3">Drive traffic to your WhatsApp Business Profile. hfjad fkjad fhjsadfkj
+                            </div>
+                            <div class="text-end what-Time"> 12:20 AM</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="whatAPIChat-footer d-flex mt-3">
+                    <div class="">
+                        <img src="img/add.png" alt="" height="30px" width="30px" class="gray-icon mt-1">
+                    </div>
+                    <div class="what-input">
+                        <img src="img/smile.png" alt="" height="20px" width="20px" class="gray-icon ">
+                        <span style="font-size: 14px;" class="ps-2" id="app">Type a messages</span>
+                    </div>
+                    <img src="img/voice.png" alt="" height="20px" width="20px" class="gray-icon mt-1 ms-2">
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Why Choose A9 Business end -->
+
+
+
+
+
+
+
+
+    <!-- what to discuss start  -->
+    <div class="container-fluid contact-us-main-container2 margin-top3" id="more-info-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center wow fadeInRight" data-wow-delay="0.1s">
+                    <img src="img/WhatApi-contact-img.png" alt="" class="whatapi-img-shadow2" height="400px">
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-right-box wow fadeInLeft" data-wow-delay="0.1s">
+                        <h1 class="text-center font-800 color-green">Want To Discuss ?</h1>
+                        <form method="POST" action="" name="google-sheet">
+
+
+                            <input type="text" placeholder="Enter Your Name" name="Name" class="contact-inp3">
+                            <input type="email" placeholder="Enter Your Email" name="Email" class="contact-inp3 mt-3">
+                            <input type="text" placeholder="Enter Your Phone" name="Phone" class="contact-inp3 mt-3">
+                            <input type="text" placeholder="Enter Your Services" name="Services"
+                                class="contact-inp3 mt-3">
+
+                            <button type="submit" class="whatapi-btn">Send</button>
+
+                        </form>
+                        <div class="mt-3"> We'll get back to you as soon as possible. In the meantime, feel free to
+                            explore
+                            more about our services on our website. We look forward to connecting with you soon!"</div>
+
+                        <div class="d-flex justify-content-around">
+                            <a href="" class="what-btn"><img src="img/indeximg/viber.png" alt="" height="20px"
+                                    width="20px" class="me-2 white-icon"> 9004928129</a>
+                            <a href="" class="what-btn"> <img src="img/indeximg/whatsapp3.png" alt="" height="20px"
+                                    width="20px" class="me-2"> 9004928129</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- what to discuss end  -->
+
+
+
+   
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">About Us</h5>
+                    <p class="mb-2">
+                        "A9 business provide the best IT related service for you to start with highly qualified
+                        professionals and team members.We design website according to the general consumer needs and
+                        wants."</p>
+                    <p class="mb-2 text-light"><i class="fa fa-phone-alt me-3"></i>+91- 9137775177</p>
+                    <p class="mb-2 text-light"><i class="fa fa-phone-alt me-3"></i>+91- 7021300820</p>
+                    <p class="mb-2 text-light"><i class="fa fa-envelope me-3"></i>Info@a9business.in</p>
+                    <p class="mb-2 text-light"><i class="fa fa-envelope me-3"></i>a9business.info@gmail.com</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="seo.html">SEO</a>
+                    <a class="btn btn-link" href="crm.html">CRM</a>
+                    <a class="btn btn-link" href="BillingSoftware.html">Billing Software</a>
+                    <a class="btn btn-link" href="Website.html">Website Development</a>
+                    <a class="btn btn-link" href="SocialMedia.html">Social Media</a>
+                    <a class="btn btn-link" href="Careers.html">Career</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address </h5>
+                    <h6 class="mb-2 text-light"><i class="fa fa-map-marker-alt me-3"></i>Thane</h6>
+                    <h6 class="mb-2 text-light"><i class="fa fa-map-marker-alt me-3"></i>Mumbai</h6>
+                    <h6 class="mb-2 text-light"><i class="fa fa-map-marker-alt me-3"></i>Bangalore</h6>
+
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                            href="https://www.instagram.com/a9business.in?igsh=MWN2OWZwYWlzejVpZg==" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                            href="https://www.facebook.com/profile.php?id=61551249441293&mibextid=ZbWKwL"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1"
+                            href="https://youtube.com/@a9business?si=ReYBd2ZWWaVcONx3" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0"
+                            href="https://www.linkedin.com/company/a9business-in/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-md-6 overflow-hidden">
+                    <h5 class="text-light mb-4">Map</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15064.161717008403!2d72.83714264631273!3d19.28060797759719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9f5c8a2c56f%3A0xd379ffc578254308!2sA9%20BUSINESS%20Consultantancy%20services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1703932427803!5m2!1sen!2sin"
+                        width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#"></a>A9 Business, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+
+                        Designed By <a href="https://www.a9business.in/">A9 Business</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+
+
+    <div class="whatsapp_float shake">
+        <a href="https://wa.me/919987142367" target="_blank" class="element"><img src="img/whatsappLogo.png"
+                class="whatsapp_float_btn">
+        </a>
+    </div>
+
+
+
+  <div class="facebook_float shake">
+        <a href="https://www.facebook.com/people/a9businessin/61551249441293/?mibextid=ZbWKwL" target="_blank" class="element"><img src="img/indeximg/facebook.png"
+                class="facebook_float_btn">
+        </a>
+    </div>
+
+    <div class="instagram_float shake">
+        <a href="https://www.instagram.com/a9business.in?igsh=MWN2OWZwYWlzejVpZg%3D%3D" target="_blank" class="element"><img src="img/indeximg/instagram1.png"
+                class="facebook_float_btn">
+        </a>
+    </div>
+
+    <div class="youtube_float shake">
+        <a href="https://www.youtube.com/@a9business" target="_blank" class="element"><img src="img/indeximg/video.png"
+                class="facebook_float_btn">
+        </a>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color: #ffffff;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Become Channel Partner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form method="POST"
+                        action="https://script.google.com/macros/s/AKfycbxahDzFBcYxhzbaCjH3dTo4mSLif3vOucfkAeXjR_Kf2alguucH7XvkWhaRNLbBdMCW/exec"
+                        name="google-sheet1">
+
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/user.png"
+                                class="grayicon mb-2" alt="name icon"></span>
+                        <input type="text" placeholder="Enter Your Name" name="Name" class="contact-inp2 ">
+
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/email.png"
+                                class="grayicon mt-3" alt="name icon"></span>
+                        <input type="email" placeholder="Enter Your Email" name="Email" class="contact-inp2 mt-3">
+
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/viber.png"
+                                class="grayicon mt-3" alt="name icon"></span>
+                        <input type="text" placeholder="Enter Your Phone" name="Phone" class="contact-inp2 mt-3">
+                        <span class="icon-prefix"><img width="17px" height="17px" src="img/indeximg/company.png"
+                                class="grayicon mt-3" alt="name icon"></span>
+                        <input type="text" placeholder="Enter Your company Name" name="Services"
+                            class="contact-inp2 mt-3">
+
+                        <button type="submit" class="contact-submit-btn">Send</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- swiper -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@danmasta/typewriter-js"></script>
+
+</body>
+
+</html>
